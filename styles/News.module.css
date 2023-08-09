@@ -5,3 +5,31 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.event {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.news h1 {
+  margin: auto;
+  padding: 1rem;
+}
+.newsMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsMenu div {
+  margin-right: 1rem;
+}
