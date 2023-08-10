@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import MainLayout from '@/layout/MainLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,5 +28,13 @@ export default function Home() {
       </main>
       <Footer />
     </>
+  );
+}
+
+Home.getLayout = function getLayout(page: JSX.Element) {
+  return (
+    <MainLayout>
+      {page}
+    </MainLayout>
   );
 }
