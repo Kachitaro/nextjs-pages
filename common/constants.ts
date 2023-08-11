@@ -1,27 +1,24 @@
 export const NavbarLink = [
   {
     href: "/",
-    label: "Home",
+    label: "Our models",
+    icon: "/24.svg",
   },
   {
     href: "/about",
-    label: "About",
+    label: "Buy online",
   },
   {
     href: "/contact",
-    label: "Contact",
+    label: "Shopping guide",
   },
   {
     href: "/domesticTicket",
-    label: "Domestic Ticket",
+    label: "Services",
   },
   {
     href: "/internationalTicket",
-    label: "International Ticket",
-  },
-  {
-    href: "/news",
-    label: "News",
+    label: "Mercedes-Benz World",
   },
 ];
 
@@ -29,4 +26,5 @@ export interface NavbarLinkItem {
   href: string;
   label: string;
   subMenu?: NavbarLinkItem[] | undefined;
+  icon?: string;
 }
