@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import LazyImage from "./LazyImage";
 import { Container } from "react-bootstrap";
+import { image } from "@/common";
 interface ArrowProps {
   className?: string;
   style?: React.CSSProperties;
@@ -20,26 +21,8 @@ function Arrow(props: ArrowProps) {
 }
 
 export const CustomCarousel = () => {
-  const image = [
-    {
-      id: 1,
-      url: "https://images.pexels.com/photos/62623/wing-plane-flying-airplane-62623.jpeg",
-    },
-    {
-      id: 2,
-      url: "https://images.pexels.com/photos/615060/pexels-photo-615060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-    {
-      id: 3,
-      url: "https://images.pexels.com/photos/62623/wing-plane-flying-airplane-62623.jpeg",
-    },
-    {
-      id: 4,
-      url: "https://images.pexels.com/photos/615060/pexels-photo-615060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    },
-  ];
   const settings = {
-    dots: true,
+    //dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -58,7 +41,7 @@ export const CustomCarousel = () => {
               backgroundImage: `url(${item.url})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundColor: "red",
+              backgroundColor: "#000",
             }}>
             <div className="position-absolute top-0 left-0 w-100 h-100 bg-opacity-75" />
             <Container fluid="lg">

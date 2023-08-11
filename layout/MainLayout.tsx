@@ -1,11 +1,11 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import NavigationBar from "@/components/NavigationBar";
 import { Fragment, PropsWithChildren } from "react";
 
 export default function MainLayout({ children }: PropsWithChildren<{}>) {
   return (
     <Fragment>
-      <Navbar />
+      <NavigationBar />
       {children}
       <Footer />
     </Fragment>
