@@ -1,10 +1,9 @@
-import styles from "@/styles/News.module.css";
 
 export default function NewsDetail({ event }: any) {
   return (
-    <section className={`${styles.main}`}>
+    <section>
       <h1>News Detail</h1>
-      <div className={`${styles.event}`}>
+      <div>
         <h3>
           {event.id}. {event.title}
         </h3>

@@ -1,15 +1,15 @@
 import "@/styles/globals.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { SSRProvider } from "react-bootstrap";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import AppWithLayout from "@/layout/AppWithLayout";
-
+import { Fragment } from "react";
 
 function App(props: any) {
   return (
-    <SSRProvider>
+    <Fragment>
       <AppWithLayout {...props} />
-    </SSRProvider>
+    </Fragment>
   );
 }
-
 export default App;

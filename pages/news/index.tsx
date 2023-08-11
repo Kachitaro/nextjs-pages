@@ -1,11 +1,10 @@
-import styles from "@/styles/News.module.css";
 import Link from "next/link";
 import React from "react";
 
 export default function News({ event }: any) {
   return (
-    <section className={`${styles.main}`}>
-      <div className={`${styles.event}`}>
+    <section>
+      <div>
         <h1>Event</h1>
         {event.map((item: any) => (
           <div key={item.id} style={{ padding: "5px" }}>
